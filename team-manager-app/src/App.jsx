@@ -134,7 +134,7 @@ function App() {
             element={ <Employees employees={employees} selectedTeam={selectedTeam} handleEmployeeCardClick={handleEmployeeCardClick} handleTeamSelectionChange={handleTeamSelectionChange} />}>
           </Route>
 
-          <Route path='/GroupedTeamMembers' element={<GroupedTeamMembers/>}>
+          <Route path='/GroupedTeamMembers' element={<GroupedTeamMembers employees={employees} selectedTeam={selectedTeam} setTeam={setTeam}/>}>
           </Route>
 
           <Route path='*' element={<NotFound />}>
